@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    /* Primary */
+    --primary: #264653;
+    --primary-foreground: #fafafa;
+  
+    /* Secondary */
+    --secondary: #2a9d8f;
+    --secondary-foreground: #fafafa;
+  
+    /* Accent */
+    --accent: #e9c46a;
+    --accent-foreground: #000000;
+  
+    /* Muted */
+    --muted: #6b7280;
+    --muted-foreground: #e5e7eb;
+  
+    /* Destructive */
+    --destructive: #e76f51;
+    --destructive-foreground: #fafafa;
+  
+    /* Card */
+    --card: #ffffff;
+    --card-foreground: #1f2937;
+  
+    /* Popover */
+    --popover: #f9fafb;
+    --popover-foreground: #1f2937;
+  
+    /* Warning */
+    --warning: #f4a261;
+    --warning-foreground: #000000;
+  }
+
+  .geist-font-thin {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.geist-font-light {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.geist-font-regular {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.geist-font-medium {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.geist-font-semibold {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.geist-font-bold {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.capitalize {
+    text-transform: capitalize;
+} 
+
+/* font size */
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+/* Padding */
+.pd-16 {
+    padding: 16px;
+}
+
+/* height */
+.hg-24 {
+    height: 24px;
+}

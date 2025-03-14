@@ -32,8 +32,14 @@
 
 .type-writer-container {
     display: flex;
-    max-width: 460px;
+    max-width: 285px;
     overflow: hidden;
+}
+
+@media (min-width: 850px) {
+    .type-writer-container {
+        max-width: 460px;
+    }
 }
 
 .type-writer {

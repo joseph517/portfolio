@@ -14,7 +14,7 @@ function About() {
                         className="text-center mb-12 about-title"
                     >
                         <h2 className="about-title fs-36 geist-font-bold mb-8">About Me</h2>
-                        <div className="about-title-line mb-40"></div>
+                        <div className="title-line mb-40"></div>
                     </motion.div>
                     <div>
                         {/* <motion.div

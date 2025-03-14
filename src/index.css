@@ -34,7 +34,7 @@ a {
     --card-foreground: #1f2937;
   
     /* Popover */
-    --popover: #f9fafb;
+    --popover: #0000000d;
     --popover-foreground: #1f2937;
   
     /* Warning */
@@ -104,21 +104,34 @@ a {
     margin-bottom: 16px;
 }
 
-.mb-24 {
-    margin-bottom: 24px;
+.mb-20{
+    margin-bottom: 20px;
 }
 
-.mb-40 {
-    margin-bottom: 40px;
+.mb-24 {
+    margin-bottom: 24px;
 }
 
 .mb-32 {
     margin-bottom: 32px;
 }
 
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+
 /* Padding */
 .pd-16 {
     padding: 16px;
+}
+
+.pd-24 {
+    padding: 24px;
 }
 
 .pd-32 {
@@ -141,6 +154,10 @@ a {
 
 .fs-18 {
     font-size: 18px;
+}
+
+.fs-20{
+    font-size: 20px;
 }
 
 .fs-24 {
@@ -187,6 +204,10 @@ a {
     color: var(--card-foreground);
 }
 
+.text-popover{
+    color: var(--popover-foreground);
+}
+
 /* button */
 .btn-primary {
     border: none;
@@ -229,3 +250,11 @@ a {
     background-color: var(--accent);
     color: var(--primary);
 } */
+
+
+/* title line */
+.title-line{
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent);
+}

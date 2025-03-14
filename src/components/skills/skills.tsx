@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import "./skills.css";
-import { div } from "framer-motion/client";
+import Cards from "./cards";
 
 function skills() {
   const skills = [
     {
       id: 1,
-      name: "Frontend Development",
+      title: "Frontend Development",
       skills: [
         "HTML/CSS/SASS",
         "JavaScript",
@@ -19,22 +19,22 @@ function skills() {
     },
     {
       id: 2,
-      name: "Backend Development",
+      title: "Backend Development",
       skills: ["Python", "Django", "REST framework", "RESTful APIs", "Odoo"],
     },
     {
       id: 3,
-      name: "Database Management",
+      title: "Database Management",
       skills: ["MySQL", "PostgreSQL", "SQLite"],
     },
     {
       id: 4,
-      name: "DevOps & tools",
+      title: "DevOps & tools",
       skills: ["Git", "Docker", "CI/CD", "Linux"],
     },
     {
       id: 5,
-      name: "Design",
+      title: "Design",
       skills: ["Figma", "Adobe XD", "UI/UX", "Responsive Design"],
     },
   ];
@@ -61,30 +61,25 @@ function skills() {
             </p>
           </div>
         </motion.div>
-        <motion.div>
           <div className="skill-section pd-24">
-            {skills.map((skill) => (
-              <div key={skill.id} className="skill-section-content pd-16">
-                <h2 className="skill-section-title fs-20 geist-font-bold text-primary mb-20">
-                  {skill.name}
-                </h2>
-                <div className="skill-list">
-                  {skill.skills.map((skill) => (
-                    <div key={skill} className="skill-item mb-8">
-                      <div className="circle-skill"></div>
-                      <span className="skill-name fs-16 geist-font-medium text-popover">
-                        {skill}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            {skills.map((skill, index) => (
+              <motion.div
+                className="skill-section-content pd-16"
+                key={skill.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ amount: 0.1, once: true }}
+              >
+                <Cards skills={skill.skills} title={skill.title} />
+              </motion.div>
             ))}
           </div>
-        </motion.div>
       </div>
     </div>
   );
 }
 
 export default skills;
+
+

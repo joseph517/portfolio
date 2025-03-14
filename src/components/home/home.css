@@ -1,0 +1,174 @@
+.home-container {
+    padding-top: 64px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* overflow: hidden; */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+
+}
+
+.home-left-content {
+    margin-bottom: 40px;
+}
+
+.home-title {
+    letter-spacing: 1.2px;
+    margin: 0 0 16px 0;
+}
+
+.type-writer-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.type-writer {
+    border-right: 5px solid var(--secondary);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 3s steps(18),
+        cursor 0.5s step-end infinite alternate;
+}
+
+/* Cursor blinking */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Text typing */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.home-description {
+    max-width: 512px;
+}
+
+.home-links {
+    display: flex;
+    gap: 16px;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    cursor: pointer;
+    overflow: hidden;
+    /* Necesario para recortar el efecto */
+    position: relative;
+    /* Solo para contener el pseudo-elemento */
+    z-index: 0;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: var(--primary);
+}
+
+.home-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Inicia desde la derecha */
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    /* Inicia sin ancho */
+    transform-origin: left;
+    /* Expansión desde la derecha */
+    transition: transform 0.3s ease 0.1s;
+    z-index: -1;
+}
+
+.home-link:hover::before {
+    color: var(--primary);
+    transform: scaleX(1);
+    /* Expande el ancho completo */
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+.home-right-content {
+    opacity: 1;
+    will-change: opacity, transform;
+    transform: none;
+    position: relative;
+}
+
+.home-footer-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 110px;
+}
+
+.home-footer {
+    position: absolute;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    right: -16px;
+    bottom: -16px;
+    background-color: var(--secondary);
+    color: var(--primary-foreground);
+}
+
+.img-container {
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+}
+
+.img-home {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* media queries */
+@media (min-width: 850px) {
+    .home-content {
+        flex-direction: row;
+    }
+
+    .home-left-content {
+        letter-spacing: 2px;
+
+    }
+
+    .img-container {
+        width: 320px;
+        height: 320px;
+        overflow: hidden;
+    }
+}

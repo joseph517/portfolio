@@ -31,7 +31,7 @@ a {
   
     /* Card */
     --card: #ffffff;
-    --card-foreground: #1f2937;
+    --card-foreground: #71717a;
   
     /* Popover */
     --popover: #0000000d;
@@ -196,8 +196,16 @@ a {
     color: var(--secondary);
 }
 
+.text-secondary-foreground {
+    color: var(--secondary-foreground);
+}
+
 .text-accent {
     color: var(--accent);
+}
+
+.text-accent-foreground {
+    color: var(--accent-foreground);
 }
 
 .text-card-foreground {
@@ -206,6 +214,10 @@ a {
 
 .text-popover{
     color: var(--popover-foreground);
+}
+
+.text-card-foreground {
+    color: var(--card-foreground);
 }
 
 /* button */

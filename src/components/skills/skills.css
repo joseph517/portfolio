@@ -11,6 +11,8 @@
 }
 
 .skill-section-content{
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
     box-shadow: 
     1px 1px 1px 0 var(--popover);
@@ -44,6 +46,10 @@
 @media (min-width: 768px) {
     .skill-section{
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .skill-section-content{
+        display: inline;;
     }
 }
 

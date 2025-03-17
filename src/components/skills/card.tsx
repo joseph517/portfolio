@@ -1,7 +1,7 @@
 import "./skills.css";
-import { CardsProps } from "../../interfaces/card.interface";
+import { CardSkillsProps } from "../../interfaces/card.interface";
 
-function Cards({ title, skills }: CardsProps) {
+function Card({ title, skills }: CardSkillsProps) {
   
     return (
       <>
@@ -22,4 +22,4 @@ function Cards({ title, skills }: CardsProps) {
     );
   }
   
-  export default Cards;
+  export default Card;

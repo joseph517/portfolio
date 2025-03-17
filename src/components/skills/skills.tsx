@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./skills.css";
-import Cards from "./cards";
+import Card from "./card";
 
 function skills() {
   const skills = [
@@ -40,7 +40,7 @@ function skills() {
   ];
 
   return (
-    <div className="skills-container">
+    <section className="skills-container">
       <div className="skills-content">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -71,12 +71,12 @@ function skills() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ amount: 0.1, once: true }}
               >
-                <Cards skills={skill.skills} title={skill.title} />
+                <Card {...skill} />
               </motion.div>
             ))}
           </div>
       </div>
-    </div>
+    </section>
   );
 }
 

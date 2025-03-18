@@ -40,7 +40,7 @@ function skills() {
   ];
 
   return (
-    <section className="skills-container">
+    <section id="skills" className="skills-container">
       <div className="skills-content">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

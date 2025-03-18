@@ -161,7 +161,7 @@ function Contact() {
                 </h3>
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
                   <div className="contact-form-inputs">
-                    <div className="mb-24">
+                    <div className="mb-24 contact-input">
                       <label className="fs-14 geist-font-medium text-muted" htmlFor="name">Your Name</label>
                       <input
                         className="fs-12 geist-font-medium text-muted-foreground mt-8 pd-12 contact-form-input"
@@ -173,7 +173,7 @@ function Contact() {
                       />
                     </div>
 
-                    <div className="mb-24">
+                    <div className="mb-24 contact-input">
                       <label className="fs-14 geist-font-medium text-muted" htmlFor="email">Your Email</label>
                       <input
                         className="fs-12 geist-font-medium text-muted-foreground mt-8 pd-12 contact-form-input"

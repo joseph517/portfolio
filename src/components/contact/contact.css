@@ -67,6 +67,12 @@
     gap: 24px;
 }
 
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .contact-form-input{
     border-radius: 8px;
     border-style: solid;

@@ -3,7 +3,7 @@
     margin: 0 24px 40px 24px;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #f4f4f54c;
+    background-color: rgba(225, 231, 241, 0.3);
 }
 
 .projects-content {

@@ -1,7 +1,11 @@
 import { motion } from "framer-motion"
 import './about.css'
+import CV_ALVARO_VERGARA from "../../assets/documents/CV_ALVARO_VERGARA.pdf"
 
 function About() {
+
+    const cv = CV_ALVARO_VERGARA
+
     return (
         <>
             <section id="about" className="about-container">
@@ -76,7 +80,7 @@ function About() {
                                 </div>
                             </div>
                             <button className="btn-primary fs-16">
-                                <a href="#" download>
+                                <a href={cv} target="_blank" rel="noopener noreferrer" className="btn-primary-content" download>
                                     Download CV
                                 </a>
                             </button>

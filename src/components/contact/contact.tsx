@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 import emailjs from 'emailjs-com';
 import "./contact.css";
+import "./modal-message-send"
+import SendMessageModal from './modal-message-send';
+
 import {
   ArrowRight,
   Briefcase,
@@ -19,11 +22,16 @@ function Contact() {
 
   const linkedin = "https://www.linkedin.com/in/dev-alvaro-jose-vergara-garcia/"
   const github = "https://github.com/joseph517"
+
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
   
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+    handleOpen();
 
     if (form.current) {
       emailjs.sendForm(
@@ -32,7 +40,9 @@ function Contact() {
         form.current,
         VITE_EMAILJS_USER_ID // User ID de EmailJS
       )
-      .then(() => alert('Mensaje enviado correctamente'))
+      .then(() => {
+        form.current?.reset();
+      })
       .catch((e) => console.log(e));
     }
   };
@@ -207,6 +217,7 @@ function Contact() {
           </div>
         </div>
       </section>
+        <SendMessageModal open={open} setOpen={setOpen}/> 
     </>
   );
 }

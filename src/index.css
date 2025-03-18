@@ -22,8 +22,8 @@ a {
     --accent-foreground: #000000;
   
     /* Muted */
-    --muted: #6b7280;
-    --muted-foreground: #e5e7eb;
+    --muted: #09090b;
+    --muted-foreground: #71717a;
   
     /* Destructive */
     --destructive: #e76f51;
@@ -88,10 +88,44 @@ a {
     text-transform: capitalize;
 } 
 
+/* height */
+.h-20 {
+    height: 20px;
+}
+
+/* min height */
+.mh-100 {
+    min-height: 100px;
+}
+
+/* min width */
+.mw-350 {
+    min-width: 350px;
+}
+
+/* width */
+.w-20 {
+    width: 20px;
+}
+
+.w-full {
+    width: 100%;
+}
+
 /* margin */
 
 .mg-16 {
     margin: 16px;
+}
+
+/* margin top */
+.mt-8 {
+    margin-top: 8px;
+}
+
+/* margin right */
+.mr-16 {
+    margin-right: 16px;
 }
 
 /* margin bottom */
@@ -124,8 +158,15 @@ a {
     margin-bottom: 48px;
 }
 
-
 /* Padding */
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-12 {
+    padding: 12px;
+}
+
 .pd-16 {
     padding: 16px;
 }
@@ -147,7 +188,25 @@ a {
     padding-left: 25px;
 }
 
+/* Padding top */
+.pt-80 {
+    padding-top: 80px;
+}
+
+/* Padding bottom */
+.pb-80 {
+    padding-bottom: 80px;
+}
+
 /* font size */
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
 .fs-16 {
     font-size: 16px;
 }
@@ -218,6 +277,14 @@ a {
 
 .text-card-foreground {
     color: var(--card-foreground);
+}
+
+.text-muted{
+    color: var(--muted);
+}
+
+.text-muted-foreground {
+    color: var(--muted-foreground);
 }
 
 /* button */

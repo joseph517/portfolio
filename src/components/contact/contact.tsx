@@ -1,4 +1,6 @@
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
+import emailjs from 'emailjs-com';
 import "./contact.css";
 import {
   ArrowRight,
@@ -11,9 +13,30 @@ import {
 
 function Contact() {
 
+  const VITE_EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const VITE_EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const VITE_EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
+
   const linkedin = "https://www.linkedin.com/in/dev-alvaro-jose-vergara-garcia/"
   const github = "https://github.com/joseph517"
+  
+  const form = useRef<HTMLFormElement>(null);
 
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs.sendForm(
+        VITE_EMAILJS_SERVICE_ID, // ID del servicio de EmailJS
+        VITE_EMAILJS_TEMPLATE_ID, // ID de la plantilla
+        form.current,
+        VITE_EMAILJS_USER_ID // User ID de EmailJS
+      )
+      .then(() => alert('Mensaje enviado correctamente'))
+      .catch((e) => console.log(e));
+    }
+  };
+  
   return (
     <>
       <section id="contact" className="contact-container pd-16 pb-80 pt-80">
@@ -126,7 +149,7 @@ function Contact() {
                 <h3 className="fs-20 geist-font-bold mb-24 text-primary">
                   Send Me a Message
                 </h3>
-                <form className="contact-form">
+                <form className="contact-form" ref={form} onSubmit={sendEmail}>
                   <div className="contact-form-inputs">
                     <div className="mb-24">
                       <label className="fs-14 geist-font-medium text-muted" htmlFor="name">Your Name</label>
@@ -135,6 +158,7 @@ function Contact() {
                         type="text"
                         id="name"
                         placeholder="John Doe"
+                        name="user_name"
                         required
                       />
                     </div>
@@ -146,6 +170,7 @@ function Contact() {
                         type="email"
                         id="email"
                         placeholder="john@example.com"
+                        name="user_email"
                         required
                       />
                     </div>
@@ -158,6 +183,7 @@ function Contact() {
                       type="text"
                       id="subject"
                       placeholder="Project Inquiry"
+                      name="subject"
                       required
                     />
                   </div>
@@ -168,10 +194,11 @@ function Contact() {
                       id="message"
                       rows={5}
                       placeholder="Your message here..."
+                      name="message"
                       required
                     ></textarea>
                   </div>
-                  <button className="btn-primary">
+                  <button type="submit" className="btn-primary">
                     Send Message <ArrowRight />
                   </button>
                 </form>

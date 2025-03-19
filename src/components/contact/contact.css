@@ -111,3 +111,29 @@
         width: 60%;
     }
 }
+
+/* modal */
+.modal-message-send{
+    position: absolute;
+    width: 70%;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    background-color: rgba(225, 231, 241);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+}
+
+@media (min-width: 768px) {
+    .modal-message-send{
+        width: 400px;
+        font-size: 20px;
+    }
+    
+}

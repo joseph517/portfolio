@@ -4,20 +4,6 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "rgba(225, 231, 241)",
-  borderRadius: "8px",
-  borderStyle: "solid",
-  borderWidth: "thin",
-  borderColor: "rgba(0, 0, 0, 0.1)",
-  boxShadow: 24,
-  p: 4,
-};
 
 function SendMessageModal({ open, setOpen }: { open: boolean, setOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
     const handleClose = () => setOpen(false);
@@ -39,7 +25,7 @@ function SendMessageModal({ open, setOpen }: { open: boolean, setOpen: React.Dis
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box className="modal-message-send">
           <Typography className="geist-font-bold text-primary" id="modal-modal-title" variant="h6" component="h2">
           Your message has been sent successfully.
           </Typography>

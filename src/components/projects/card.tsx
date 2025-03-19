@@ -16,14 +16,16 @@ function Card(props: CardProjectsProps) {
               <button className="card-btn text-accent-foreground fs-14">
                 <a 
                   className="card-btn-content"
-                  href="">
+                  target="_blank"
+                  href={props.code}>
                   <Github /> Code
                 </a>
               </button>
               <button  className="card-btn text-secondary-foreground fs-14">
                 <a 
                   className="card-btn-content"
-                  href="">
+                  target="_blank"
+                  href={props.demo}>
                   <ExternalLink /> Demo
                 </a>
               </button>

@@ -10,5 +10,6 @@ export interface CardProjectsProps{
     description: string;
     tech: string[];
     image: string;
-
+    demo: string;
+    code: string;
 }

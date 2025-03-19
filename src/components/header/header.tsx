@@ -38,7 +38,7 @@ function Header() {
       window.removeEventListener("scroll", handleScroll)
       window.removeEventListener('resize', handleResize)
     }
-  }, [])
+  },)
 
   return (
     <>

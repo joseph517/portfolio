@@ -1,328 +1,330 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 :root {
-    /* Primary */
-    --primary: #264653;
-    --primary-foreground: #fafafa;
-  
-    /* Secondary */
-    --secondary: #2a9d8f;
-    --secondary-foreground: #fafafa;
-  
-    /* Accent */
-    --accent: #e9c46a;
-    --accent-foreground: #000000;
-  
-    /* Muted */
-    --muted: #09090b;
-    --muted-foreground: #71717a;
-  
-    /* Destructive */
-    --destructive: #e76f51;
-    --destructive-foreground: #fafafa;
-  
-    /* Card */
-    --card: #ffffff;
-    --card-foreground: #71717a;
-  
-    /* Popover */
-    --popover: #0000000d;
-    --popover-foreground: #1f2937;
-  
-    /* Warning */
-    --warning: #f4a261;
-    --warning-foreground: #000000;
-  }
+  /* Primary */
+  --primary: #264653;
+  --primary-foreground: #fafafa;
 
-  .geist-font-thin {
-    font-family: "Geist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
+  /* Secondary */
+  --secondary: #2a9d8f;
+  --secondary-foreground: #fafafa;
+
+  /* Accent */
+  --accent: #e9c46a;
+  --accent-foreground: #000000;
+
+  /* Muted */
+  --muted: #09090b;
+  --muted-foreground: #71717a;
+
+  /* Destructive */
+  --destructive: #e76f51;
+  --destructive-foreground: #fafafa;
+
+  /* Card */
+  --card: #ffffff;
+  --card-foreground: #71717a;
+
+  /* Popover */
+  --popover: #0000000d;
+  --popover-foreground: #1f2937;
+
+  /* Warning */
+  --warning: #f4a261;
+  --warning-foreground: #000000;
+}
+
+.geist-font-thin {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .geist-font-light {
-    font-family: "Geist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .geist-font-regular {
-    font-family: "Geist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .geist-font-medium {
-    font-family: "Geist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .geist-font-semibold {
-    font-family: "Geist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .geist-font-bold {
-    font-family: "Geist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .capitalize {
-    text-transform: capitalize;
-} 
+  text-transform: capitalize;
+}
 
 /* height */
 .h-20 {
-    height: 20px;
+  height: 20px;
 }
 
 /* min height */
 .mh-100 {
-    min-height: 100px;
+  min-height: 100px;
 }
 
-/* min width */
-.mw-350 {
+@media (min-width: 768px) {
+  /* min width */
+  .mw-350 {
     min-width: 350px;
+  }
 }
 
 /* width */
 .w-20 {
-    width: 20px;
+  width: 20px;
 }
 
 .w-full {
-    width: 100%;
+  width: 100%;
 }
 
 /* margin */
 
 .mg-16 {
-    margin: 16px;
+  margin: 16px;
 }
 
 /* margin top */
 .mt-8 {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 /* margin right */
 .mr-16 {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 /* margin bottom */
 
 .mb-8 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .mb-16 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-.mb-20{
-    margin-bottom: 20px;
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mb-24 {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .mb-32 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .mb-40 {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .mb-48 {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 /* Padding */
 .pd-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .pd-12 {
-    padding: 12px;
+  padding: 12px;
 }
 
 .pd-16 {
-    padding: 16px;
+  padding: 16px;
 }
 
 .pd-24 {
-    padding: 24px;
+  padding: 24px;
 }
 
 .pd-32 {
-    padding: 32px;
+  padding: 32px;
 }
 
 .pd-80 {
-    padding: 80px;
+  padding: 80px;
 }
 
 /* Padding left */
 .pl-25 {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 /* Padding top */
 .pt-80 {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 /* Padding bottom */
 .pb-80 {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 /* font size */
 .fs-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .fs-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .fs-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .fs-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.fs-20{
-    font-size: 20px;
+.fs-20 {
+  font-size: 20px;
 }
 
 .fs-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .fs-30 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .fs-36 {
-    font-size: 36px; 
+  font-size: 36px;
 }
 
 .fs-60 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 /* height */
 .hg-24 {
-    height: 24px;
+  height: 24px;
 }
 
 .img-320 {
-    width: 320px;
-    height: 320px;
+  width: 320px;
+  height: 320px;
 }
 
 /* Colors */
 
 .text-primary {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .text-secondary {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 .text-secondary-foreground {
-    color: var(--secondary-foreground);
+  color: var(--secondary-foreground);
 }
 
 .text-accent {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .text-accent-foreground {
-    color: var(--accent-foreground);
+  color: var(--accent-foreground);
 }
 
 .text-card-foreground {
-    color: var(--card-foreground);
+  color: var(--card-foreground);
 }
 
-.text-popover{
-    color: var(--popover-foreground);
+.text-popover {
+  color: var(--popover-foreground);
 }
 
 .text-card-foreground {
-    color: var(--card-foreground);
+  color: var(--card-foreground);
 }
 
-.text-muted{
-    color: var(--muted);
+.text-muted {
+  color: var(--muted);
 }
 
 .text-muted-foreground {
-    color: var(--muted-foreground);
+  color: var(--muted-foreground);
 }
 
 /* button */
 .btn-primary {
-    border: none;
-    display: flex;
-    align-items: center;
-    padding: 12px 16px;
-    border-radius: 8px;
-    background-color: var(--primary);
-    color: var(--primary-foreground);
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    transition: color 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  transition: color 0.3s ease;
 }
 
 .btn-primary:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease 0.1s;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease 0.1s;
+  z-index: -1;
 }
 
 .btn-primary:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* .btn-primary:hover {
@@ -330,10 +332,9 @@ a {
     color: var(--primary);
 } */
 
-
 /* title line */
-.title-line{
-    width: 80px;
-    height: 4px;
-    background-color: var(--accent);
+.title-line {
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent);
 }

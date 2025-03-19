@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./skills.css";
 import Card from "./card";
 
-function skills() {
+function Skills() {
   const skills = [
     {
       id: 1,
@@ -80,6 +80,6 @@ function skills() {
   );
 }
 
-export default skills;
+export default Skills;
 
 

@@ -1,6 +1,6 @@
 import "./header.css"
 import { useState, useEffect } from "react";
-import { Code, Briefcase, User, Mail, Github, Linkedin, Twitter, ArrowRight, ExternalLink, Menu, X } from "lucide-react"
+import {  Menu, X } from "lucide-react"
 
 
 function Header() {

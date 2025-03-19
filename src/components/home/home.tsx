@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AlvaroVergara from "../../assets/AlvaroVergara.jpg";
 import "./home.css";
 
-function home() {
+function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const logo = AlvaroVergara;
 
@@ -96,4 +96,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

@@ -15,7 +15,7 @@ function Projects() {
         {
             id: 2,
             title: "QuimiLearn",
-            description: "Pagina dinamica de aprendizaje de quimica",
+            description: "Dynamic Chemistry Learning Page",
             tech: ["HTML", "CSS", "JavaScript", "Git"],
             image: quimiLearn,
             demo: "https://quimi-learn.vercel.app/",
@@ -24,7 +24,7 @@ function Projects() {
         {
             id: 3,
             title: "Biller",
-            description: " Aplicacion consiste en un facturador en angular, cuenta con dos paginas (Crear - Listar). Se calcula el valor del iva en tiempo real, se calcula un total sin iva, con iva, del iva, las facturas creadas se almacenan en el localstorage, se valida que el formulario sea valido, se permite el filtrado por nombre e identificacion. ",
+            description: "Application consists of a biller in angular, has two pages (Create - List). It calculates the value of vat in real time, it calculates a total without vat, with vat, vat, the invoices created are stored in the localstorage, it validates that the form is valid, it allows filtering by name and identification.",
             tech: ["Html", "Css", "Bootstrap", "TypeScript", "Angular", "Git"],
             image: biller,
             demo: "https://biller-flame.vercel.app/",
@@ -33,7 +33,7 @@ function Projects() {
         {
             id: 1,
             title: "PayUp view",
-            description: "Se implementó un diseño previamente establecido, asegurando que fuera completamente responsivo para adaptarse a diferentes dispositivos.",
+            description: "Established design was implemented, ensuring that it was fully responsive to adapt to different devices.",
             tech: ["HTML", "CSS", "Sass", "TypeScript", "Angular", "Git"],
             image: PayUp,
             demo: "https://maqueta-pi.vercel.app/",
@@ -42,7 +42,7 @@ function Projects() {
         {
             id: 4,
             title: "Todo",
-            description: "Aplicación que permite la creación de tareas, asignación de personas y habilidades mediante formularios reactivos y anidados. Se implementan validaciones para asegurar que los campos estén completos y que no se repitan nombres en una misma tarea. Además, es posible eliminar personas y habilidades de las tareas. Posteriormente, las tareas se pueden listar y filtrar por su estado: todas, pendientes o completadas.",
+            description: "Application that allows the creation of tasks, assignment of people and skills through reactive and nested forms. Validations are implemented to ensure that fields are complete and that names are not repeated in the same task. In addition, it is possible to remove people and skills from tasks. Subsequently, tasks can be listed and filtered by their status: all, pending or completed.",
             tech: ["Html", "Css", "Bootstrap", "TypeScript", "Angular", "Git"],
             image: todo,
             demo: "https://todo-two-smoky-15.vercel.app/create-task",
@@ -51,7 +51,7 @@ function Projects() {
         {
             id: 5,
             title: "Country App",
-            description: " Proyecto que permite consumir una api de https://restcountries.com/ para consular, listar y ver detalles de paises, ya sea por nombre, nombre de capital y region.",
+            description: "Project that allows to consume an api of https://restcountries.com/ to consulate, list and view details of countries, either by name, capital name and region.",
             tech: ["React", "Node.js"],
             image: countryApp,
             demo: "https://country-app-pi-seven.vercel.app/countries/by-country",

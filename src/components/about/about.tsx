@@ -2,6 +2,16 @@ import { motion } from "framer-motion"
 import './about.css'
 import CV_ALVARO_VERGARA from "../../assets/documents/CV_ALVARO_VERGARA.pdf"
 
+/**
+ * About component.
+ *
+ * This component renders the about section of the website.
+ *
+ * It's composed of a title, a subtitle, and a paragraph with some text.
+ * Also, it renders a button to download the CV.
+ *
+ * @returns The About component.
+ */
 function About() {
 
     const cv = CV_ALVARO_VERGARA
@@ -21,22 +31,6 @@ function About() {
                         <div className="title-line mb-40"></div>
                     </motion.div>
                     <div>
-                        {/* <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                            viewport={{ once: true }}
-                            className="md:w-1/2 mb-8 md:mb-0"
-                        >
-                            <div>
-                                <div>
-                                    <img src="" alt="" />
-                                </div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </motion.div> */}
-
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             whileInView={{ opacity: 1, x: 0 }}

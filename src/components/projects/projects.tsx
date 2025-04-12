@@ -52,7 +52,7 @@ function Projects() {
             id: 5,
             title: "Country App",
             description: "Project that allows to consume an api of https://restcountries.com/ to consulate, list and view details of countries, either by name, capital name and region.",
-            tech: ["React", "Node.js"],
+            tech: ["Html", "Css", "Bootstrap", "TypeScript", "Angular", "Docker", "Git"],
             image: countryApp,
             demo: "https://country-app-pi-seven.vercel.app/countries/by-country",
             code: "https://github.com/joseph517/countryApp"

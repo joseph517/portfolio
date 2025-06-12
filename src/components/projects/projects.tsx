@@ -8,10 +8,20 @@ import quimiLearn from '../../assets/projects/quimiLearn.png'
 import biller from '../../assets/projects/biller.png'
 import countryApp from '../../assets/projects/countryApp.png'
 import todo from '../../assets/projects/todo.png'
+import lendWise from '../../assets/projects/lendWise.png'
 
 function Projects() {
 
     const projects = [
+        {
+            id: 6,
+            title: "lendWise",
+            description: "loan application platform, which approves or rejects loan applications.",
+            tech: ["Angular", "TypeScript", "Git", "Bootstrap", "Angular Material"],
+            image: lendWise,
+            demo: "https://lend-wise.vercel.app/loan",
+            code: "https://github.com/joseph517/lendWise"
+        },
         {
             id: 2,
             title: "QuimiLearn",
@@ -58,8 +68,8 @@ function Projects() {
             code: "https://github.com/joseph517/countryApp"
         },
         // {
-        //     id: 6,
-        //     title: "Project 6",
+        //     id: 7,
+        //     title: "Project 7",
         //     description: "Description 6",
         //     tech: ["React", "Node.js"],
         //     image: "https://via.placeholder.com/150",

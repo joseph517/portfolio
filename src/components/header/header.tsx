@@ -1,44 +1,45 @@
-import "./header.css"
-import { useState, useEffect } from "react";
-import {  Menu, X } from "lucide-react"
 
+import './header.css';
+import { useState, useEffect } from 'react';
+import {  Menu, X } from 'lucide-react';
 
 function Header() {
 
-  const sections = ["home", "about", "skills", "projects", "contact"]
+  const sections = ['home', 'about', 'skills', 'projects', 'contact'];
 
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       for (const section of sections) {
-        const element = document.getElementById(section)
+        const element = document.getElementById(section);
         if (element) {
-          const rect = element.getBoundingClientRect()
+          const rect = element.getBoundingClientRect();
           if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section)
-            break
+            setActiveSection(section);
+            break;
           }
         }
       }
-    }
+    };
+
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768)
-      if (!isMobile) setMobileMenuOpen(false)
-    }
+      setIsMobile(window.innerWidth < 768);
+      if (!isMobile) setMobileMenuOpen(false);
+    };
 
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    window.addEventListener("scroll", handleScroll)
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-      window.removeEventListener('resize', handleResize)
-    }
-  },)
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  });
 
   return (
     <>
@@ -51,11 +52,11 @@ function Header() {
           {/* Navigation Desktop */}
           {!isMobile && (
             <div className="md-hidden nav-desktop-menu">
-              {sections.map((item) => (
+              {sections.map(item => (
                 <a
                   key={item}
                   href={`#${item}`}
-                  className={`fs-16 geist-font-medium capitalize transition-colors ${activeSection === item ? "text-accent" : "hover:text-accent/80"
+                  className={`fs-16 geist-font-medium capitalize transition-colors ${activeSection === item ? 'text-accent' : 'hover:text-accent/80'
                     }`}
                 >
                   {item}
@@ -75,11 +76,11 @@ function Header() {
           {mobileMenuOpen && (
             <div className="mobile-menu pd-16">
               <div className="mobile-menu-content">
-                {sections.map((item) => (
+                {sections.map(item => (
                   <a
                     key={item}
                     href={`#${item}`}
-                    className={`fs-16 hg-24 geist-font-medium capitalize transition-colors ${activeSection === item ? "text-accent" : "hover:text-accent/80"
+                    className={`fs-16 hg-24 geist-font-medium capitalize transition-colors ${activeSection === item ? 'text-accent' : 'hover:text-accent/80'
                       }`}
                   >
                     {item}

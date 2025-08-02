@@ -1,41 +1,41 @@
-import { motion } from "framer-motion";
-import "./skills.css";
-import Card from "./card";
+import { motion } from 'framer-motion';
+import './skills.css';
+import Card from './card';
 
 function Skills() {
   const skills = [
     {
       id: 1,
-      title: "Frontend Development",
+      title: 'Frontend Development',
       skills: [
-        "HTML/CSS/SASS",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Angular",
-        "Bootstrap",
-        "Angular Design",
+        'HTML/CSS/SASS',
+        'JavaScript',
+        'TypeScript',
+        'React',
+        'Angular',
+        'Bootstrap',
+        'Angular Design',
       ],
     },
     {
       id: 2,
-      title: "Backend Development",
-      skills: ["Python", "Django", "REST framework", "RESTful APIs", "Odoo"],
+      title: 'Backend Development',
+      skills: ['Python', 'Django', 'Java', 'Spring Boot', 'REST framework', 'RESTful APIs', 'Odoo'],
     },
     {
       id: 3,
-      title: "Database Management",
-      skills: ["MySQL", "PostgreSQL", "SQLite"],
+      title: 'Database Management',
+      skills: ['MySQL', 'PostgreSQL', 'SQLite', 'SQLServer'],
     },
     {
       id: 4,
-      title: "DevOps & tools",
-      skills: ["Git", "Docker", "CI/CD", "Linux"],
+      title: 'DevOps & tools',
+      skills: ['Git', 'Docker', 'CI/CD', 'Linux', 'Azure DevOps'],
     },
     {
       id: 5,
-      title: "Design",
-      skills: ["Figma", "Adobe XD", "UI/UX", "Responsive Design"],
+      title: 'Design',
+      skills: ['Figma', 'Adobe XD', 'UI/UX', 'Responsive Design'],
     },
   ];
 

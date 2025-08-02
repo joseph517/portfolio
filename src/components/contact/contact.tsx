@@ -1,9 +1,9 @@
+
 import React, { useRef } from 'react';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
-import "./contact.css";
-import "./modal-message-send"
-import SendMessageModal from './modal-message-send';
+import './contact.css';
+import SendMessageModal from './SendMessageModal';
 
 import {
   ArrowRight,
@@ -11,8 +11,8 @@ import {
   Github,
   Linkedin,
   Mail,
-  User,
-} from "lucide-react";
+  User
+} from 'lucide-react';
 
 function Contact() {
 
@@ -20,13 +20,12 @@ function Contact() {
   const VITE_EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const VITE_EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
-  const linkedin = "https://www.linkedin.com/in/dev-alvaro-jose-vergara-garcia/"
-  const github = "https://github.com/joseph517"
+  const linkedin = 'https://www.linkedin.com/in/dev-alvaro-jose-vergara-garcia/';
+  const github = 'https://github.com/joseph517';
 
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
-  
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent) => {
@@ -35,18 +34,21 @@ function Contact() {
 
     if (form.current) {
       emailjs.sendForm(
-        VITE_EMAILJS_SERVICE_ID, // ID del servicio de EmailJS
-        VITE_EMAILJS_TEMPLATE_ID, // ID de la plantilla
+        // ID del servicio de EmailJS
+        VITE_EMAILJS_SERVICE_ID,
+        // ID de la plantilla
+        VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        VITE_EMAILJS_USER_ID // User ID de EmailJS
+        // User ID de EmailJS
+        VITE_EMAILJS_USER_ID
       )
       .then(() => {
         form.current?.reset();
       })
-      .catch((e) => console.log(e));
+      .catch(err => console.info(err));
     }
   };
-  
+
   return (
     <>
       <section id="contact" className="contact-container pd-16 pb-80 pt-80">
@@ -115,7 +117,7 @@ function Contact() {
                       Work Inquiries
                     </h4>
                     <p className="fs-16 geist-font-medium text-muted-foreground">
-                      Open for freelance anda full-time positions
+                      Open for freelance and full-time positions
                     </p>
                   </div>
                 </div>
@@ -217,7 +219,7 @@ function Contact() {
           </div>
         </div>
       </section>
-        <SendMessageModal open={open} setOpen={setOpen}/> 
+        <SendMessageModal open={open} setOpen={setOpen}/>
     </>
   );
 }

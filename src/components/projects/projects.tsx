@@ -1,71 +1,71 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import "./projects.css";
-import { ArrowRightIcon } from "lucide-react";
-import Card from "./card";
-import PayUp from "../../assets/projects/PayUp-view.jpeg";
-import quimiLearn from "../../assets/projects/quimiLearn.png";
-import biller from "../../assets/projects/biller.png";
-import countryApp from "../../assets/projects/countryApp.png";
-import todo from "../../assets/projects/todo.png";
-import lendWise from "../../assets/projects/lendWise.png";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import './projects.css';
+import { ArrowRightIcon } from 'lucide-react';
+import Card from './card';
+import PayUp from '../../assets/projects/PayUp-view.jpeg';
+import quimiLearn from '../../assets/projects/quimiLearn.png';
+import biller from '../../assets/projects/biller.png';
+import countryApp from '../../assets/projects/countryApp.png';
+import todo from '../../assets/projects/todo.png';
+import lendWise from '../../assets/projects/lendWise.png';
 
 function Projects() {
   const projects = [
     {
       id: 6,
-      title: "lendWise",
+      title: 'lendWise',
       description:
-        "loan application platform, which approves or rejects loan applications.",
-      tech: ["Angular", "TypeScript", "Git", "Bootstrap", "Angular Material"],
+        'loan application platform, which approves or rejects loan applications.',
+      tech: ['Angular', 'TypeScript', 'Git', 'Bootstrap', 'Angular Material'],
       image: lendWise,
-      demo: "https://lend-wise.vercel.app/loan",
-      code: "https://github.com/joseph517/lendWise",
+      demo: 'https://lend-wise.vercel.app/loan',
+      code: 'https://github.com/joseph517/lendWise',
     },
     {
       id: 2,
-      title: "QuimiLearn",
-      description: "Dynamic Chemistry Learning Page",
-      tech: ["HTML", "CSS", "JavaScript", "Git"],
+      title: 'QuimiLearn',
+      description: 'Dynamic Chemistry Learning Page',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Git'],
       image: quimiLearn,
-      demo: "https://quimi-learn.vercel.app/",
-      code: "https://github.com/joseph517/quimiLearn",
+      demo: 'https://quimi-learn.vercel.app/',
+      code: 'https://github.com/joseph517/quimiLearn',
     },
     {
       id: 3,
-      title: "Biller",
+      title: 'Biller',
       description:
-        "Application consists of a biller in angular, has two pages (Create - List). It calculates the value of vat in real time, it calculates a total without vat, with vat, vat, the invoices created are stored in the localstorage, it validates that the form is valid, it allows filtering by name and identification.",
-      tech: ["Html", "Css", "Bootstrap", "TypeScript", "Angular", "Git"],
+        'Application consists of a biller in angular, has two pages (Create - List). It calculates the value of vat in real time, it calculates a total without vat, with vat, vat, the invoices created are stored in the localstorage, it validates that the form is valid, it allows filtering by name and identification.',
+      tech: ['Html', 'Css', 'Bootstrap', 'TypeScript', 'Angular', 'Git'],
       image: biller,
-      demo: "https://biller-flame.vercel.app/",
-      code: "https://github.com/joseph517/biller",
+      demo: 'https://biller-flame.vercel.app/',
+      code: 'https://github.com/joseph517/biller',
     },
     {
       id: 1,
-      title: "PayUp view",
+      title: 'PayUp view',
       description:
-        "Established design was implemented, ensuring that it was fully responsive to adapt to different devices.",
-      tech: ["HTML", "CSS", "Sass", "TypeScript", "Angular", "Git"],
+        'Established design was implemented, ensuring that it was fully responsive to adapt to different devices.',
+      tech: ['HTML', 'CSS', 'Sass', 'TypeScript', 'Angular', 'Git'],
       image: PayUp,
-      demo: "https://maqueta-pi.vercel.app/",
-      code: "https://github.com/joseph517/loginPayUp",
+      demo: 'https://maqueta-pi.vercel.app/',
+      code: 'https://github.com/joseph517/loginPayUp',
     },
     {
       id: 4,
-      title: "Todo",
+      title: 'Todo',
       description:
-        "Application that allows the creation of tasks, assignment of people and skills through reactive and nested forms. Validations are implemented to ensure that fields are complete and that names are not repeated in the same task. In addition, it is possible to remove people and skills from tasks. Subsequently, tasks can be listed and filtered by their status: all, pending or completed.",
-      tech: ["Html", "Css", "Bootstrap", "TypeScript", "Angular", "Git"],
+        'Application that allows the creation of tasks, assignment of people and skills through reactive and nested forms. Validations are implemented to ensure that fields are complete and that names are not repeated in the same task. In addition, it is possible to remove people and skills from tasks. Subsequently, tasks can be listed and filtered by their status: all, pending or completed.',
+      tech: ['Html', 'Css', 'Bootstrap', 'TypeScript', 'Angular', 'Git'],
       image: todo,
-      demo: "https://todo-two-smoky-15.vercel.app/create-task",
-      code: "https://github.com/joseph517/todo",
+      demo: 'https://todo-two-smoky-15.vercel.app/create-task',
+      code: 'https://github.com/joseph517/todo',
     },
     {
       id: 5,
-      title: "Country App",
+      title: 'Country App',
       description:
-        "Project that allows to consume an api of https://restcountries.com/ to consulate, list and view details of countries, either by name, capital name and region.",
+        'Project that allows to consume an api of https://restcountries.com/ to consulate, list and view details of countries, either by name, capital name and region.',
       tech: [
         'Html',
         'Css',
@@ -76,8 +76,8 @@ function Projects() {
         'Git',
       ],
       image: countryApp,
-      demo: "https://country-app-pi-seven.vercel.app/countries/by-country",
-      code: "https://github.com/joseph517/countryApp",
+      demo: 'https://country-app-pi-seven.vercel.app/countries/by-country',
+      code: 'https://github.com/joseph517/countryApp',
     },
     // {
     //     id: 7,
@@ -127,7 +127,7 @@ function Projects() {
             className="card-view-all-btn fs-14 geist-font-medium"
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? "Hide" : "View All Projects"} <ArrowRightIcon />
+            {showAll ? 'Hide' : 'View All Projects'} <ArrowRightIcon />
           </button>
         </div>
       </div>

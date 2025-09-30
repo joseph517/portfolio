@@ -7,7 +7,7 @@ interface UseParallaxOptions {
 }
 
 export const useParallax = (
-  ref: RefObject<HTMLElement>,
+  ref: RefObject<HTMLElement | null>,
   options: UseParallaxOptions = {}
 ): MotionValue<string> => {
   const { speed = 50, direction = 'up' } = options;
@@ -27,7 +27,7 @@ export const useParallax = (
 };
 
 export const useParallaxScale = (
-  ref: RefObject<HTMLElement>,
+  ref: RefObject<HTMLElement | null>,
   range: [number, number] = [0.8, 1.2]
 ): MotionValue<number> => {
   const { scrollYProgress } = useScroll({
@@ -39,7 +39,7 @@ export const useParallaxScale = (
 };
 
 export const useParallaxOpacity = (
-  ref: RefObject<HTMLElement>
+  ref: RefObject<HTMLElement | null>
 ): MotionValue<number> => {
   const { scrollYProgress } = useScroll({
     target: ref,

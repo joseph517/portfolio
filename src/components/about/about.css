@@ -1,32 +1,74 @@
-.about-container{
-    display: flex;
-    justify-content: center;
-    margin: 0 24px 40px 24px;
-    padding: 80px 16px;
-    background-color: rgba(225, 231, 241, 0.3);
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 24px 40px 24px;
+  padding: 80px 16px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--shadow-xl);
+  position: relative;
 }
 
-.about-content{
-    max-width: 880px;
-    overflow: hidden;
+[data-theme="light"] .about-container {
+  background: linear-gradient(
+    135deg,
+    rgba(225, 231, 241, 0.4) 0%,
+    rgba(225, 231, 241, 0.2) 100%
+  );
 }
 
-.about-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}   
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(var(--accent-rgb), 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(var(--secondary-rgb), 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
 
-.about-info{
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(2, minmax(0, 1fr))
+.about-content {
+  max-width: 880px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-info {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .about-info-item {
-    word-wrap: break-word;
+  word-wrap: break-word;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all var(--transition-normal) var(--ease-smooth);
+  color: #fff;
+}
+
+.about-info-item:hover {
+  background-color: rgba(var(--accent-rgb), 0.1);
 }

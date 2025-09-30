@@ -163,56 +163,97 @@ function Contact() {
                 </h3>
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
                   <div className="contact-form-inputs">
-                    <div className="mb-24 contact-input">
+                    <motion.div
+                      className="mb-24 contact-input"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                    >
                       <label className="fs-14 geist-font-medium text-muted" htmlFor="name">Your Name</label>
-                      <input
+                      <motion.input
                         className="fs-12 geist-font-medium text-muted-foreground mt-8 pd-12 contact-form-input"
                         type="text"
                         id="name"
                         placeholder="John Doe"
                         name="user_name"
                         required
+                        whileFocus={{ scale: 1.02 }}
+                        transition={{ duration: 0.2 }}
                       />
-                    </div>
+                    </motion.div>
 
-                    <div className="mb-24 contact-input">
+                    <motion.div
+                      className="mb-24 contact-input"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
                       <label className="fs-14 geist-font-medium text-muted" htmlFor="email">Your Email</label>
-                      <input
+                      <motion.input
                         className="fs-12 geist-font-medium text-muted-foreground mt-8 pd-12 contact-form-input"
                         type="email"
                         id="email"
                         placeholder="john@example.com"
                         name="user_email"
                         required
+                        whileFocus={{ scale: 1.02 }}
+                        transition={{ duration: 0.2 }}
                       />
-                    </div>
+                    </motion.div>
                   </div>
 
-                  <div className="contact-form-inputs-2 mb-24">
+                  <motion.div
+                    className="contact-form-inputs-2 mb-24"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                  >
                     <label className="fs-14 geist-font-medium text-muted" htmlFor="subject">Subject</label>
-                    <input
+                    <motion.input
                       className="fs-12 geist-font-medium text-muted-foreground mt-8 pd-12 contact-form-input"
                       type="text"
                       id="subject"
                       placeholder="Project Inquiry"
                       name="subject"
                       required
+                      whileFocus={{ scale: 1.02 }}
+                      transition={{ duration: 0.2 }}
                     />
-                  </div>
-                  <div className="contact-form-inputs-2 mb-24">
+                  </motion.div>
+                  <motion.div
+                    className="contact-form-inputs-2 mb-24"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 }}
+                  >
                     <label className="fs-14 geist-font-medium text-muted" htmlFor="message">Message</label>
-                    <textarea
+                    <motion.textarea
                       className="fs-12 geist-font-medium text-muted-foreground mt-8 pd-12 contact-form-input mh-100 mw-350"
                       id="message"
                       rows={5}
                       placeholder="Your message here..."
                       name="message"
                       required
-                    ></textarea>
-                  </div>
-                  <button type="submit" className="btn-primary">
+                      whileFocus={{ scale: 1.02 }}
+                      transition={{ duration: 0.2 }}
+                    ></motion.textarea>
+                  </motion.div>
+                  <motion.button
+                    type="submit"
+                    className="btn-primary"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.5 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     Send Message <ArrowRight />
-                  </button>
+                  </motion.button>
                 </form>
               </div>
             </motion.div>

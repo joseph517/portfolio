@@ -14,6 +14,16 @@ function Projects() {
   const projects = [
     {
       id: 6,
+      title: 'Boutique',
+      description:
+        'Boutique is a platform for buying and selling products.',
+      tech: ['Angular', 'TypeScript', 'Git', 'Angular Material'],
+      image: lendWise,
+      demo: 'https://boutique-teal-three.vercel.app/',
+      code: 'https://github.com/joseph517/boutique',
+    },
+    {
+      id: 6,
       title: 'lendWise',
       description:
         'loan application platform, which approves or rejects loan applications.',

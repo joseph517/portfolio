@@ -60,13 +60,27 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.about-info-left,
+.about-info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .about-info-item {
   word-wrap: break-word;
   cursor: pointer;
   padding: 8px;
   border-radius: 8px;
   transition: all var(--transition-normal) var(--ease-smooth);
-  color: #fff;
+}
+
+[data-theme="light"] .about-info-item {
+  color: #1f2937 !important;
+}
+
+[data-theme="dark"] .about-info-item {
+  color: #fff !important;
 }
 
 .about-info-item:hover {

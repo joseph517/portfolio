@@ -9,16 +9,17 @@ import biller from '../../assets/projects/biller.png';
 import countryApp from '../../assets/projects/countryApp.png';
 import todo from '../../assets/projects/todo.png';
 import lendWise from '../../assets/projects/lendWise.png';
+import boutique from '../../assets/projects/boutique.png';
 
 function Projects() {
   const projects = [
     {
-      id: 6,
+      id: 7,
       title: 'Boutique',
       description:
         'Boutique is a platform for buying and selling products.',
       tech: ['Angular', 'TypeScript', 'Git', 'Angular Material'],
-      image: lendWise,
+      image: boutique,
       demo: 'https://boutique-teal-three.vercel.app/',
       code: 'https://github.com/joseph517/boutique',
     },

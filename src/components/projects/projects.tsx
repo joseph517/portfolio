@@ -10,9 +10,20 @@ import countryApp from '../../assets/projects/countryApp.png';
 import todo from '../../assets/projects/todo.png';
 import lendWise from '../../assets/projects/lendWise.png';
 import boutique from '../../assets/projects/boutique.png';
+import englishGrammar from '../../assets/projects/english-grammar.png';
 
 function Projects() {
   const projects = [
+    {
+      id: 8,
+      title: 'English Grammar App',
+      description:
+        'English Grammar App is a platform for learning English grammar.',
+      tech: ['Angular', 'TypeScript', 'Git', 'Scss',],
+      image: englishGrammar,
+      demo: 'https://english-grammar-app-six.vercel.app/verb-to-be',
+      code: 'https://github.com/joseph517/english-grammar-app',
+    },
     {
       id: 7,
       title: 'Boutique',
